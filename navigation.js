@@ -1,5 +1,6 @@
 const render = path => {
-    page = path.replace(/^#\//, "");
+    page = path.replace("#", "");
+
     if (page == "") {
         page = "proposal";
     }
