@@ -5,7 +5,8 @@ const render = path => {
         page = "home";
     }
     // load page
-    document.querySelector("iframe").src = "pages/" + page + ".html";
+    dark_mode = window.localStorage.getItem('darkmode') == "true" ? "#dark" : "";
+    document.querySelector("iframe").src = "pages/" + page + ".html" + dark_mode;
 
     // highlight active nav item
     try {document.querySelector(`.active`).classList.remove("active")} catch {};
