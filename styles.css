@@ -51,6 +51,11 @@ nav a {
     display: block;
     text-decoration: none;
     margin-bottom: 10px;
+    color: rgb(255, 72, 0);
+}
+
+nav .active {
+    font-weight: bold;
 }
 
 p {
