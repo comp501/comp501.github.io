@@ -59,7 +59,7 @@ nav {
 nav a {
     display: block;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: var(--accent);
 }
 
@@ -69,4 +69,19 @@ nav .active {
 
 p {
     line-height: 1.5;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.subpages {
+    border-left: solid 1px;
+    padding-left: 15px;
 }

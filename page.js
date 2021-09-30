@@ -1,5 +1,7 @@
+const src = document.querySelector("script").getAttribute("src");
+
 var link = document.createElement( "link" );
-link.href = "../styles.css";
+link.href = src.replace("page.js", "styles.css")
 link.rel = "stylesheet";
 
 document.getElementsByTagName( "head" )[0].appendChild( link );
