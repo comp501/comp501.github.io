@@ -48,8 +48,10 @@ iframe {
 
 #sidebar {
     width: 300px;
+    height: 100vh;
     display: inline-block;
     padding: 0 10px;
+    overflow: auto;
 }
 
 nav {
@@ -60,15 +62,20 @@ nav a {
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
-    color: var(--accent);
+    
 }
 
 nav .active {
     font-weight: bold;
 }
 
+a {
+    color: var(--accent);
+}
+
 p {
     line-height: 1.5;
+    font-size: 1.15em;
 }
 
 table {

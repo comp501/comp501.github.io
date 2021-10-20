@@ -1,3 +1,4 @@
+// --- LOAD STYLES ---
 const src = document.querySelector("script").getAttribute("src");
 
 var link = document.createElement( "link" );
@@ -6,7 +7,7 @@ link.rel = "stylesheet";
 
 document.getElementsByTagName( "head" )[0].appendChild( link );
 
-
+// --- DETECT DARKMODE ---
 function detectDarkmode() {
     if (window.location.hash == "#dark") {
         document.documentElement.classList.add("dark");
@@ -17,3 +18,15 @@ function detectDarkmode() {
 
 window.onhashchange = evt => detectDarkmode();
 detectDarkmode();
+
+// --- REPLACE REF LINKS ---
+document.addEventListener("DOMContentLoaded", function(){
+
+    refs = document.getElementsByClassName("ref");
+
+    for (ref of refs) {
+        ref.setAttribute('href', ref.innerText);
+        ref.setAttribute('target', '_blank');
+        ref.setAttribute('rel', 'noopener norefferer');
+    };
+});
